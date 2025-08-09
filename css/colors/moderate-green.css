@@ -1,0 +1,152 @@
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #8a00c4;
+}
+.main-menu .navbar-default .navbar-nav .active a {
+  color: #8a00c4;
+}
+.main-menu nav li a::after {
+  background: #8a00c4;
+}
+.typer {
+  color: #8a00c4 !important;
+}
+.banner-text h2 {
+  color: #8a00c4;
+}
+.book-btn a {
+  background: #8a00c4;
+  border: 3px solid #8a00c4;
+}
+.book-btn a:hover {
+  border: 3px solid #8a00c4;
+}
+.hvr-underline-from-center::before {
+  background: #8a00c4;
+}
+.block-title {
+  color: #8a00c4;
+}
+.item-type-zoom .item-hover:hover::before {
+  background: #8900c49b;
+}
+.special-box .owl-theme .owl-controls .owl-page.active span {
+  background: #8a00c4;
+}
+.offer-item div h3 {
+  color: #8a00c4;
+}
+.tab-menu .is-active {
+  background: #8a00c4;
+}
+.tab-menu .slick-arrow.slick-prev {
+  background: #8a00c4 url(../../images/back.png) no-repeat center;
+  background-position: 2px 4px;
+}
+.tab-menu .slick-arrow.slick-next {
+  background: #8a00c4 url(../../images/next.png) no-repeat center;
+  background-position: 7px 4px;
+}
+.tab-menu .slick-arrow.slick-prev:hover {
+  background: #8a00c4 url(../../images/back_hover.png) no-repeat center;
+  background-position: 2px 4px;
+}
+.tab-menu .slick-arrow.slick-next:hover {
+  background: #8a00c4 url(../../images/next_hover.png) no-repeat center;
+  background-position: 7px 4px;
+}
+
+.offer-item .offer-price {
+  border: 1px solid #8a00c4;
+}
+.sf-team:hover .text-col {
+  background-color: #8a00c4;
+}
+.gal-item a::after {
+  background-color: #8900c49b;
+}
+.overlay i:hover {
+  border: 1px solid #8a00c4;
+  color: #8a00c4;
+}
+.blog-btn-v a {
+  background: #8a00c4;
+  border: 3px solid #8a00c4;
+}
+.blog-btn-v a:hover {
+  border: 3px solid #8a00c4;
+}
+.book-srv a {
+  background: #8a00c4;
+  border: 3px solid #8a00c4;
+}
+.book-srv a:hover {
+  border: 3px solid #8a00c4;
+}
+.reserve-book-btn button {
+  background: #8a00c4;
+  border: 3px solid #8a00c4;
+}
+.reserve-book-btn button:hover a {
+  color: #000000;
+}
+.reserve-book-btn button:hover {
+  border: 3px solid #8a00c4;
+}
+
+.panel-pricing .panel-heading {
+  background: #8a00c4;
+}
+.panel-pricing {
+  border: 1px solid #8a00c4;
+}
+.panel-body p strong span {
+  color: #8a00c4;
+}
+.pricing-main .panel-footer a {
+  background: #8a00c4;
+  border: 3px solid #8a00c4;
+}
+.pricing-main .panel-footer a:hover {
+  border: 3px solid #8a00c4;
+}
+
+.footer-news form a {
+  background: #8a00c4;
+}
+.footer-news form a:hover {
+  border: 2px dotted #8a00c4;
+}
+.footer-box-a h3 {
+  color: #8a00c4;
+}
+.footer-box-b h3 {
+  color: #8a00c4;
+}
+.footer-box-c h3 {
+  color: #8a00c4;
+}
+.footer-box-d h3 {
+  color: #8a00c4;
+}
+.footer-box-c p a:hover {
+  color: #8a00c4;
+}
+.footer-box-b ul li a:hover {
+  color: #8a00c4;
+}
+
+.footer-box .socials-box a:hover .social-circle-border {
+  color: #8a00c4;
+}
+
+.footer-box-c p i {
+  color: #8a00c4;
+}
+
+.copyright-main {
+  background: #8a00c4;
+}
+
+#color-panel a.panel-button:hover {
+  color: #8a00c4;
+}
