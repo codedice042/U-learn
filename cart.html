@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cart - Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Your Cart</h1>
+      <div id="cart-items" class="mb-4"></div>
+      <h3>Total: ₦<span id="cart-total">0</span></h3>
+
+      <div class="mt-4 d-flex justify-content-between">
+        <button class="btn btn-secondary" onclick="continueShopping()">
+          Continue Shopping
+        </button>
+        <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+        <button class="btn btn-success" onclick="checkoutCart()">
+          Checkout
+        </button>
+      </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

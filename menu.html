@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- color -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      id="changeable-colors"
+      rel="stylesheet"
+      href="css/colors/moderate-green.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light justify-content-between px-4">
+      <a class="navbar-brand fw-bold">Foodie</a>
+      <a href="cart.html" class="btn btn-outline-primary position-relative">
+        🛒 Cart
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          id="cart-count"
+          >0</span
+        >
+      </a>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row mb-4">
+        <div class="col-md-6 offset-md-3">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Search food..."
+          />
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <button
+          class="btn btn-outline-dark me-2"
+          onclick="filterCategory('soups')"
+        >
+          Soups
+        </button>
+        <button
+          class="btn btn-outline-dark me-2"
+          onclick="filterCategory('rice')"
+        >
+          Rice
+        </button>
+        <button
+          class="btn btn-outline-dark me-2"
+          onclick="filterCategory('dishes')"
+        >
+          Dishes
+        </button>
+        <button
+          class="btn btn-outline-dark me-2"
+          onclick="filterCategory('drinks')"
+        >
+          Drinks
+        </button>
+        <button
+          class="btn btn-outline-secondary"
+          onclick="displayMenuItems(menuItems)"
+        >
+          All
+        </button>
+      </div>
+
+      <div class="row" id="menu-items"></div>
+    </div>
+
+    <div class="modal fade" id="addToCartModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Customize Order</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold" id="modalItemName"></p>
+            <input type="hidden" id="modalItemImage" />
+            <input type="hidden" id="modalItemPrice" />
+            <div class="mb-3">
+              <label for="modalSize" class="form-label">Size:</label>
+              <select id="modalSize" class="form-select">
+                <option value="Small">Small</option>
+                <option value="Big">Big</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="modalQty" class="form-label">Quantity:</label>
+              <input
+                type="number"
+                id="modalQty"
+                class="form-control"
+                value="1"
+                min="1"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" onclick="confirmAddToCart()">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="color-panel" class="close-color-panel">
+      <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+      <div class="segment">
+        <h4 class="gray2 normal no-padding">Color Scheme</h4>
+        <a title="orange" class="switcher orange-bg"></a>
+        <a title="strong-blue" class="switcher strong-blue-bg"></a>
+        <a title="moderate-green" class="switcher moderate-green-bg"></a>
+        <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+      </div>
+    </section>
+
+    <!-- jQuery (MUST come first) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/custom.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
